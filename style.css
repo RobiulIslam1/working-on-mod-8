@@ -63,3 +63,63 @@ nav a{
 .other-month{
     background-color:blanchedalmond;
 }
+.menu-container{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.food{
+    border: 3px solid deepskyblue;
+    text-align: justify;
+}
+.food img{
+    width: 75%;
+}
+@media (max-width: 700px) {
+    .food{
+        background-color: gold;
+    }
+    .menu-container {
+        flex-direction: column;
+    }
+}
+@media (min-width: 900px) {
+    .food{
+        background-color: hotpink;
+    }
+}
+.photo-frame{
+    height: 202px;
+    width: 300px;
+    border: 2px solid rebeccapurple;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+.photo img{
+    width: 100%;
+    
+}
+.photo-details{
+    position: absolute;
+
+    width: 300px;
+    top: 0;
+    display: none;
+}
+.photo-frame:hover .photo-details{
+    display: block;
+    background-color: rgba(228, 225, 54, 0.473);
+}
+.photo-frame:hover .photo{
+    transform: scale(1.2) skew(15deg);
+    transition: transform 1s ease-in;
+}
+div h3{
+    text-align: center;
+}
+.photo-album{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 4px;
+}
