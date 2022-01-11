@@ -17,12 +17,6 @@ nav a{
     width: 200px;
     border: 1px dashed blue;
 }
-#box-1{
-
-}
-#box-2{
-
-}
 .form-sec{
     display: flex;
     justify-content: center;
@@ -51,4 +45,21 @@ nav a{
 }
 .grid-cell{
     border: 3px solid hotpink;
+}
+.calender{
+    display: grid;
+    height: 600px;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 2em repeat(5, 1fr);
+    grid-gap: 1em;
+}
+.date, .day{
+    background-color: grey;
+    display: flex;
+    font-size:3em;
+    justify-content:center ;
+    align-items: center;
+}
+.other-month{
+    background-color:blanchedalmond;
 }
